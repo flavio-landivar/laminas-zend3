@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Application;
 
+use Laminas\Db\Adapter\AdapterAbstractServiceFactory;
 use Laminas\Router\Http\Literal;
 use Laminas\Router\Http\Segment;
 use Laminas\ServiceManager\Factory\InvokableFactory;
@@ -54,4 +55,10 @@ return [
             __DIR__ . '/../view',
         ],
     ],
+    'service_manager' => [
+        'factories' => [
+            'Application\Db\WriteAdapter' => AdapterAbstractServiceFactory::class,
+        ],
+    ],
+
 ];

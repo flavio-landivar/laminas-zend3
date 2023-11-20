@@ -13,10 +13,21 @@
  */
 
 return [
-    'db' => [
+    /*'db' => [
         'driver' => 'Pdo',
         'dsn' => 'mysql:dbname=zf_laminas_helpdesk;host=localhost;charset=utf8',
         'username' => 'root',
         'password' => ''
+    ]*/
+
+    'db' => [
+        'adapters' => [
+            'Application\Db\Teste' => [
+                'driver' => 'Pdo',
+                'dsn' => 'mysql:dbname=zf_laminas_helpdesk;host=localhost;charset=utf8',
+                'username' => 'root',
+                'password' => '',
+            ],
+        ]
     ]
 ];

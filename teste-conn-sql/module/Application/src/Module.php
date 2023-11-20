@@ -28,7 +28,8 @@ class Module
          * @var $adapter       Adapter
          */
         $serviceManager = $e->getApplication()->getServiceManager();
-        $adapter = $serviceManager->get(Adapter::class);
+        //$adapter = $serviceManager->get(Adapter::class);
+        $adapter = $serviceManager->get('Application\Db\Teste');
 
         $statement = $adapter->createStatement("SELECT * FROM users");
         $statement->prepare();
