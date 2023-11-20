@@ -1,0 +1,38 @@
+Para facilitar os nossos estudos estou deixando o link do manual do Zend Framework onde mostra o passo a passo da instalação do Skeleton-Application
+
+Aqui está a lista com todos os componentes que iremos utilizar
+
+zendframework/zend-mvc
+zfcampus/zf-development-mode
+zendframework/zend-cache
+zendframework/zend-db
+zendframework/zend-mvc-form
+zendframework/zend-json
+zendframework/zend-mvc-console
+zendframework/zend-mvc-i18n
+zendframework/zend-mvc-plugins
+zendframework/zend-session
+zendframework/zend-servicemanager-di
+zendframework/zend-mail
+zendframework/zend-authentication
+zendframework/zend-hydrator
+zendframework/zend-math
+zendframework/zend-crypt
+zendframework/zend-paginator
+zendframework/zend-i18n-resources
+Lembrando que temos que ter algumas bibliotecas ativar em nossa configuração do PHP para que tudo funcione perfeitamente sendo elas:
+
+php_intl
+php_mysqli (por precaução ative esta biblioteca)
+php_pdo_mysql
+php_curl
+php_mbstring
+
+
+
+
+
+
+RUN Application
+php -S localhost:8090 -t public public/index.php
+
